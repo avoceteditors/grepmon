@@ -137,7 +137,7 @@ def main():
     cmd = sys.argv[1:]
 
     # Validate Command before Running
-    valid = cmd[0] in ["grep", "egrep"]
+    valid = cmd[0] in ["grep", "egrep", "fgrep", "rgrep"]
     if not valid:
         if input(f"Is {cmd[0]} a grep-like utility: ") not in ["y", "Y", "yes"]:
             print(f"Invalid Utility: {cmd[0]}")
